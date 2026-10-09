@@ -1,0 +1,150 @@
+:root {
+  --morado: #5b5fc7;
+  --morado-oscuro: #444791;
+  --fondo: #f5f5f7;
+  --tarjeta: #ffffff;
+  --texto: #242424;
+  --texto-suave: #616161;
+  --borde: #e0e0e0;
+  --rojo: #c4314b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ---------- Cabecera ---------- */
+header {
+  background: var(--morado);
+  color: #fff;
+  padding: 40px 16px;
+  text-align: center;
+}
+header h1 { font-size: 2rem; margin-bottom: 8px; }
+header p { opacity: 0.9; }
+
+.volver {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.volver:hover { text-decoration: underline; }
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+/* ---------- Página de inicio: tarjetas ---------- */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-top: 5px solid var(--rojo);
+  border-radius: 10px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--texto);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.tarjeta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.tarjeta .error {
+  font-family: Consolas, monospace;
+  color: var(--rojo);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.tarjeta h2 { font-size: 1.2rem; margin: 8px 0; }
+.tarjeta p { color: var(--texto-suave); font-size: 0.95rem; }
+.tarjeta .ir { display: block; margin-top: 16px; color: var(--morado); font-weight: 600; }
+
+.intro { margin-bottom: 28px; color: var(--texto-suave); }
+
+/* ---------- Páginas de guía ---------- */
+.aviso {
+  background: #fdf3f4;
+  border-left: 5px solid var(--rojo);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+}
+.aviso code { font-family: Consolas, monospace; font-weight: 700; color: var(--rojo); }
+
+.paso {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.paso h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.numero {
+  background: var(--morado);
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.paso p { margin-bottom: 12px; }
+
+.paso img {
+  max-width: 100%;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* Hueco gris para la foto: bórralo cuando pongas tu <img> */
+.foto-pendiente {
+  border: 2px dashed #b0b0b0;
+  border-radius: 8px;
+  padding: 40px 16px;
+  text-align: center;
+  color: #8a8a8a;
+  margin-top: 8px;
+}
+
+.ayuda {
+  background: #eef0fb;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 32px;
+}
+.ayuda h2 { font-size: 1.1rem; margin-bottom: 8px; color: var(--morado-oscuro); }
+
+footer {
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+  padding: 24px 16px;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .paso { padding: 18px; }
+}
