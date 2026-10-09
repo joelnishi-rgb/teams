@@ -1,51 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayuda Teams</title>
+  <title>Hjälp med inloggning i Teams – vanliga fel och lösningar</title>
+  <meta name="description" content="Guider för elever som inte kan logga in i Microsoft Teams. Lösningar på HTTP-fel (HTTP Status 400 Bad Request), Inloggningen misslyckades och Internal Server Error.">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Jag får HTTP-fel (HTTP Status 400 – Bad Request) när jag loggar in i Teams. Vad gör jag?",
+        "acceptedAnswer": { "@type": "Answer", "text": "1. Anslut till wifi-nätverket StockholmPublic. 2. Kryssa i att du godkänner användarvillkoren och tryck på Anslut. 3. Stäng av Teams helt eller avinstallera och installera om Teams. 4. Logga in i Teams igen med ditt elevkonto (till exempel exempel@elevmail.stockholm.se)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Det står Inloggningen misslyckades när jag loggar in i Teams. Vad gör jag?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Felet beror oftast på att du har loggat in som medarbetare i stället för elev. 1. På sidan Hur vill du logga in? väljer du Elever i listan och sedan Logga in med användarnamn och lösenord. 2. Skriv ditt användarnamn (till exempel aa01234) och ditt lösenord och tryck på Logga in." }
+      },
+      {
+        "@type": "Question",
+        "name": "Det står Internal Server Error när jag loggar in i Teams. Vad gör jag?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Felet beror oftast på att ditt konto inte är aktiverat. Kontakta administrationen för att aktivera ditt konto. När kontot är aktiverat: 1. Välj Elever och sedan Logga in med användarnamn och lösenord. 2. Skriv ditt användarnamn och lösenord och tryck på Logga in." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <header>
-    <h1>Problemas frecuentes de Teams</h1>
-    <p>Elige el error que te aparece y sigue la guía paso a paso.</p>
+    <h1>Problem med att logga in i Teams</h1>
+    <p>Välj felmeddelandet som du ser och följ guiden steg för steg.</p>
   </header>
 
   <main>
     <p class="intro">
-      <!-- Cambia este texto si quieres -->
-      Estas son las soluciones a los tres problemas más habituales de Microsoft Teams.
+      Här finns lösningar på de tre vanligaste felen som visas när du försöker logga in i Microsoft Teams.
     </p>
 
     <div class="tarjetas">
 
       <a class="tarjeta" href="http-fel.html">
         <span class="error">HTTP-fel</span>
-        <h2>Error HTTP en Teams</h2>
-        <p>Teams no carga o muestra un error de conexión HTTP.</p>
-        <span class="ir">Ver guía →</span>
+        <h2>HTTP Status 400 – Bad Request</h2>
+        <p>Teams visar ett HTTP-fel när du försöker logga in.</p>
+        <span class="ir">Visa guiden →</span>
       </a>
 
       <a class="tarjeta" href="inloggning.html">
         <span class="error">Inloggningen misslyckades</span>
-        <h2>No puedo iniciar sesión</h2>
-        <p>Teams dice que el inicio de sesión ha fallado.</p>
-        <span class="ir">Ver guía →</span>
+        <h2>Vi kunde inte hitta ditt konto</h2>
+        <p>Oftast har du loggat in som medarbetare i stället för elev.</p>
+        <span class="ir">Visa guiden →</span>
       </a>
 
       <a class="tarjeta" href="internal-server-error.html">
-        <span class="error">Internal server error</span>
-        <h2>Error interno del servidor</h2>
-        <p>Teams muestra "Internal server error" al abrir o usar la aplicación.</p>
-        <span class="ir">Ver guía →</span>
+        <span class="error">Internal Server Error</span>
+        <h2>Kontot är inte aktiverat</h2>
+        <p>Oftast är ditt konto inte aktiverat ännu.</p>
+        <span class="ir">Visa guiden →</span>
       </a>
 
     </div>
+
+    <!-- Snabbguide: hela lösningen i text, så att Copilot-agenten hittar svaret direkt -->
+    <section class="snabbguide">
+      <h2>Snabbguide – alla lösningar</h2>
+
+      <article>
+        <h3>HTTP-fel (HTTP Status 400 – Bad Request)</h3>
+        <ol>
+          <li>Anslut till wifi-nätverket <strong>StockholmPublic</strong>.</li>
+          <li>Kryssa i att du godkänner användarvillkoren och tryck på <strong>Anslut</strong>.</li>
+          <li>Stäng av Teams helt, eller avinstallera och installera om Teams.</li>
+          <li>Logga in i Teams igen med ditt elevkonto.</li>
+        </ol>
+        <p><a href="http-fel.html">Hela guiden med bilder →</a></p>
+      </article>
+
+      <article>
+        <h3>Inloggningen misslyckades</h3>
+        <p><strong>Orsak:</strong> oftast har du loggat in som <em>medarbetare</em> i stället för <em>elev</em>.</p>
+        <ol>
+          <li>Välj <strong>Elever</strong> i listan "Hur vill du logga in?" och sedan <strong>Logga in med användarnamn och lösenord</strong>.</li>
+          <li>Skriv ditt användarnamn (t.ex. aa01234) och lösenord och tryck på <strong>Logga in</strong>.</li>
+        </ol>
+        <p><a href="inloggning.html">Hela guiden med bilder →</a></p>
+      </article>
+
+      <article>
+        <h3>Internal Server Error</h3>
+        <p><strong>Orsak:</strong> oftast är ditt konto inte aktiverat.</p>
+        <ol>
+          <li>Kontakta administrationen för att aktivera ditt konto.</li>
+          <li>När kontot är aktiverat: välj <strong>Elever</strong> och sedan <strong>Logga in med användarnamn och lösenord</strong>.</li>
+          <li>Skriv ditt användarnamn och lösenord och tryck på <strong>Logga in</strong>.</li>
+        </ol>
+        <p><a href="internal-server-error.html">Hela guiden med bilder →</a></p>
+      </article>
+    </section>
   </main>
 
-  <footer>Guía interna de soporte</footer>
+  <footer>Information · Uppdaterad 2026-08-27</footer>
 
 </body>
 </html>

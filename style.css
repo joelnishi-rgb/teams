@@ -1,6 +1,6 @@
 :root {
-  --morado: #5b5fc7;
-  --morado-oscuro: #444791;
+  --morado: #1f8a80;
+  --morado-oscuro: #16665f;
   --fondo: #f5f5f7;
   --tarjeta: #ffffff;
   --texto: #242424;
@@ -118,6 +118,42 @@ main {
   border-radius: 8px;
   margin-top: 8px;
 }
+
+/* Fotos */
+figure { margin: 12px 0 0; }
+figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 520px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: #fff;
+}
+.aviso h2, .orsak h2, .losning h2 { font-size: 1.1rem; margin-bottom: 8px; }
+.aviso p { margin-bottom: 8px; }
+
+.orsak, .losning {
+  background: #e8f5f3;
+  border-left: 5px solid var(--morado);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+/* Snabbguide på startsidan */
+.snabbguide { margin-top: 48px; }
+.snabbguide > h2 { font-size: 1.4rem; margin-bottom: 16px; }
+.snabbguide article {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+.snabbguide h3 { color: var(--rojo); font-size: 1.1rem; margin-bottom: 8px; }
+.snabbguide ol { margin: 8px 0 8px 22px; }
+.snabbguide a, .otras a, footer a { color: var(--morado-oscuro); font-weight: 600; }
+.otras { margin-top: 24px; text-align: center; }
 
 /* Hueco gris para la foto: bórralo cuando pongas tu <img> */
 .foto-pendiente {
